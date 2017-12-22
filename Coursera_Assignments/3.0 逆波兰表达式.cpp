@@ -5,24 +5,22 @@
 //eg: * / + 12 36 + 1 3 - 15 8
 //out: 84
 
-
 #include <iostream>
-
 using namespace std;
 
-double notation(){
-	char str[10];
-	cin >> str;
-	switch (str[0])
-	{
-		case'*': return notation() * notation();
-		case'/': return notation() / notation();
-		case'+': return notation() + notation();
-		case'-': return notation() - notation();
-		default: return atof(str);
-	}
+double notation() {
+    char str[10];
+    cin >> str;
+    switch (str[0]) {
+        case '*': return notation() * notation();
+        case '/': return notation() / notation();
+        case '+': return notation() + notation();
+        case '-': return notation() - notation();
+        default: return atof(str);
+    }
 }
+
 int main(int argc, char *argv[]) {
-	cout << notation();
-	return 0;
+    cout << notation();
+    return 0;
 }
