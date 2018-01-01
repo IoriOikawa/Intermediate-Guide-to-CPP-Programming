@@ -1,9 +1,9 @@
 #include <iostream>
 #include <stdio.h>
-
 using namespace std;
 
 void fun(int a);
+
 int main()
 {
 	int a;
