@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() 
+int main()
 {
 	int i = 0, j , k;
 	char s[501], temp;
 	gets(s);
-	while(s[i])
+	while (s[i])
 	{
 		while (s[i] == ' ') i++;
-		if(!s[i]) break;
+		if (!s[i]) break;
 		j = i;
-		while(s[j] != ' '&&s[j]) j++;
+		while (s[j] != ' ' && s[j]) j++;
 		for (k = i; k < (i + j) / 2; k++)
 		{
 			temp = s[k];
